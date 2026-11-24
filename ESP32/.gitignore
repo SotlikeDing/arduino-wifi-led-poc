@@ -1,0 +1,5 @@
+# secrets - never commit
+arduino_secrets.h
+
+# compiled firmware (Arduino IDE "Export Compiled Binary")
+build/

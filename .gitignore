@@ -1,0 +1,6 @@
+# secrets - never commit
+firmware/**/arduino_secrets.h
+tools/secrets.local.json
+SECRETS.local.md
+
+node_modules/

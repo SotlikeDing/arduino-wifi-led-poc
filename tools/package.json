@@ -1,0 +1,1 @@
+{"name":"led-poc-tools","private":true,"type":"module","scripts":{"device":"node virtual-uno.mjs","test":"node e2e-test.mjs"},"dependencies":{"mqtt":"^5.10.1"}}

@@ -39,7 +39,7 @@ if (S.authRequired !== false) await new Promise((res) => {
 // 2. app connects
 const app = appClient(S.appUser, S.appPass);
 await new Promise((res, rej) => { app.on("connect", res); app.on("error", rej); });
-ok("app connects over wss://…:8884/mqtt", true);
+ok(`app connects over wss://…:${S.wsPort || 8884}/mqtt`, true);
 await new Promise((r) => app.subscribe([T.state, T.status, T.info], { qos: 1 }, r));
 
 // 3. boot the virtual board

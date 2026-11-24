@@ -118,6 +118,7 @@ button { font: inherit; color: inherit; }
 .led-stage[data-state="on"] .led-rim { fill: #f2b705; }
 .led-stage[data-state="on"] .led-glow { opacity: 1; transform: scale(1); }
 .led-stage[data-state="unknown"] .led { opacity: .55; }
+.led-stage.stale { filter: saturate(.35); opacity: .6; }
 
 /* ---------- controls */
 .controls { display: flex; flex-direction: column; gap: 20px; }

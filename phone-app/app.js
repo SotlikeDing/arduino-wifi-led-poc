@@ -64,6 +64,7 @@
 
     const known = st.pin !== null, on = st.pin === true;
     ui.app.dataset.pin = known ? (on ? "on" : "off") : "unknown";
+    ui.app.dataset.board = st.cloud === "connected" && st.board === "offline" ? "offline" : "ok";
     ui.bigState.textContent = known ? (on ? "ON" : "OFF") : "—";
     ui.power.setAttribute("aria-pressed", String(on));
     ui.power.classList.toggle("pending", !!st.pending);

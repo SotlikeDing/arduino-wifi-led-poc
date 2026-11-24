@@ -152,3 +152,8 @@ button:disabled { cursor: default; }
   .rings { transform: translateY(-58px); }
   .big-state { margin-top: 22px; font-size: 38px; }
 }
+
+/* board offline: show last known state, dimmed */
+.app[data-board="offline"] .power,
+.app[data-board="offline"] .big-state { opacity: .45; filter: saturate(.4); }
+.app[data-board="offline"] .rings span { animation: none; }

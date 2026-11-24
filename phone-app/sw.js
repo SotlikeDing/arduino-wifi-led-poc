@@ -1,6 +1,6 @@
 // Service worker: caches the app shell so the installed app opens instantly.
 // The MQTT connection itself always goes live to the broker.
-const CACHE = "r4remote-v1";
+const CACHE = "r4remote-v2";
 const SHELL = ["./", "index.html", "styles.css", "app.js", "config.js", "mqtt.min.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"];
 

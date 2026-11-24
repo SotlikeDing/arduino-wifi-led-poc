@@ -99,6 +99,7 @@
     // pin
     const on = st.pin === true, known = st.pin !== null;
     els.ledStage.dataset.state = known ? (on ? "on" : "off") : "unknown";
+    els.ledStage.classList.toggle("stale", b === "connected" && st.device === "offline");
     els.stateValue.textContent = known ? (on ? "ON" : "OFF") : "—";
     els.stateValue.className = "state-value" + (known ? (on ? " is-on" : " is-off") : "");
     els.toggle.setAttribute("aria-checked", String(on));
